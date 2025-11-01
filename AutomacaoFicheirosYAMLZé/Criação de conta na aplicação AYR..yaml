@@ -1,0 +1,70 @@
+appId: ayr
+---
+- tapOn:
+    text: "AYR"
+    index: 0
+- repeat:
+    times: 3
+    commands:
+    - swipe:
+        direction: "LEFT"
+- tapOn:
+    id: "com.ceiia.ayr:id/button"
+- tapOn:
+    id: "com.ceiia.ayr:id/sign_up_tv"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_button"
+- assertVisible:
+    text: "First Name"
+- assertVisible:
+    text: "First Name"
+- assertVisible:
+    text: "Last Name"
+- assertVisible:
+    text: "Email"
+- assertVisible:
+    text: "Phone Number"
+- assertVisible:
+    text: "Password"
+- assertVisible:
+    id: "com.ceiia.ayr:id/login_first_name_til"
+- assertVisible:
+    id: "com.ceiia.ayr:id/login_last_name_til"
+- assertVisible:
+    id: "com.ceiia.ayr:id/login_email_til"
+- assertVisible:
+    id: "com.ceiia.ayr:id/login_phone_til"
+- assertVisible:
+    id: "com.ceiia.ayr:id/login_password_til"
+- tapOn:
+    id: "com.ceiia.ayr:id/login_first_name_til"
+- inputText: "Jose"
+- tapOn:
+    id: "com.ceiia.ayr:id/login_last_name_til"
+- inputText: "Pereira"
+- tapOn:
+    id: "com.ceiia.ayr:id/login_email_til"
+- inputText: "zezenicola@gmail.com"
+- tapOn:
+    id: "com.ceiia.ayr:id/login_phone_til"
+- inputText: 932765401
+- tapOn:
+    id: "com.ceiia.ayr:id/login_password_til"
+- inputText: "Testedeceiia#123"
+- tapOn:
+    id: "com.ceiia.ayr:id/next_btn"
+- tapOn:
+    point: "8%,59%"
+- tapOn:
+    id: "com.ceiia.ayr:id/next_btn"
+- tapOn:
+    id: "com.ceiia.ayr:id/code_til"
+- inputText: 552442
+- tapOn:
+    id: "com.ceiia.ayr:id/verify_btn"
+- tapOn:
+    id: "android:id/button1"
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_button"
+- tapOn:
+    id: "android:id/button1"

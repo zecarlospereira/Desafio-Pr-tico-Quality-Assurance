@@ -1,0 +1,36 @@
+appId: ayr
+---
+- tapOn: "AYR"
+- assertVisible:
+    text: "Login"
+- assertVisible:
+    text: "Phone number"
+- assertVisible:
+    text: "Password"
+- assertVisible:
+    text: "Forgot Password"
+- assertVisible:
+    id: "com.ceiia.ayr:id/log_in_title_tv"
+- assertVisible:
+    id: "com.ceiia.ayr:id/phone_number_tv"
+- assertVisible:
+    id: "com.ceiia.ayr:id/ccp_rl"
+- assertVisible:
+    id: "com.ceiia.ayr:id/password_tv"
+- assertVisible:
+    id: "com.ceiia.ayr:id/login_btn"
+- assertVisible:
+    id: "com.ceiia.ayr:id/forgot_password_tv"
+- assertVisible:
+    id: "com.ceiia.ayr:id/sign_up_tv"
+- tapOn:
+    point: "68%,46%"
+- inputText: 932765401
+- tapOn:
+    point: "50%,57%"
+- inputText: "Testedeceiia#123"
+- tapOn: "Next"
+- assertVisible:
+    id: "android:id/message"
+- tapOn:
+    id: "android:id/button1"

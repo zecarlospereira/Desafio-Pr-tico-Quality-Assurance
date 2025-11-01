@@ -1,0 +1,12 @@
+appId: ayr
+---
+- tapOn:
+    id: "com.ceiia.ayr:id/start_activity_btn"
+- tapOn:
+    id: "com.ceiia.ayr:id/stop_btn"
+- assertVisible:
+    id: "com.ceiia.ayr:id/mainContainerView"
+- tapOn:
+    id: "com.ceiia.ayr:id/btnEnd"
+- assertVisible:
+    id: "com.ceiia.ayr:id/offlineSession_mainView"
