@@ -1,4 +1,4 @@
-# 🧪 Testes da Aplicação AYR e Website CEiiA
+# Testes da Aplicação AYR e Website CEiiA
 
 Este repositório contém testes automatizados desenvolvidos no âmbito de uma candidatura para o cargo de **QA Engineer**.  
 Os testes abrangem duas áreas principais:
@@ -8,11 +8,11 @@ Os testes abrangem duas áreas principais:
 
 ---
 
-## 📱 Tarefa 2 – Mobile Automation (Aplicação AYR)
+## Tarefa 2 – Mobile Automation (Aplicação AYR)
 
 Os ficheiros YAML descrevem fluxos de teste automatizados para a aplicação **AYR**, desde a criação de conta até ao registo de uma atividade.
 
-### 📂 Estrutura dos Ficheiros
+### Estrutura dos Ficheiros
 
 | Ficheiro | Descrição |
 |-----------|------------|
@@ -22,14 +22,14 @@ Os ficheiros YAML descrevem fluxos de teste automatizados para a aplicação **A
 
 ---
 
-### ⚙️ Pré-requisitos
+### Pré-requisitos
 
 - Dispositivo recém-configurado (sem histórico da aplicação AYR).  
 - Permissão de localização **“sempre permitir”** previamente concedida.
 
 ---
 
-### ▶️ Como Executar
+### Como Executar
 
 1. Garantir que o dispositivo cumpre os pré-requisitos.  
 2. Importar os ficheiros `.yaml` no ambiente de testes.  
@@ -38,20 +38,20 @@ Os ficheiros YAML descrevem fluxos de teste automatizados para a aplicação **A
    2. `Login com uma conta existente..yaml`
    3. `Registar uma atividade dentro da aplicação..yaml`
 
-> 💡 **Nota:**  
+> **Nota:**  
 > Se a app já tiver sido usada no dispositivo, recomenda-se reinstalar e limpar dados antes da execução.  
 > Cada cenário pode ser executado de forma independente, mas a ordem acima assegura coerência.
 
 ---
 
-## 💻 Tarefa 3 – Web Automation (Website CEiiA)
+## Tarefa 3 – Web Automation (Website CEiiA)
 
 A automação web foi implementada em **Cypress**, com o ficheiro principal `ceiia.spec.cy.js`.  
 O objetivo é validar a navegação, a estrutura e o conteúdo do site oficial do **CEiiA**.
 
 ---
 
-### 📂 Estrutura do Ficheiro
+### Estrutura do Ficheiro
 
 | Ficheiro | Descrição |
 |-----------|------------|
@@ -59,7 +59,7 @@ O objetivo é validar a navegação, a estrutura e o conteúdo do site oficial d
 
 ---
 
-### ✅ Funcionalidades Testadas
+### Funcionalidades Testadas
 
 - **Validação da homepage** – título e elementos principais.  
 - **Menu principal** – abertura e visibilidade de todas as opções:
@@ -78,7 +78,7 @@ O objetivo é validar a navegação, a estrutura e o conteúdo do site oficial d
 
 ---
 
-### ▶️ Como Executar
+### Como Executar
 
 Certifica-te de que tens o **Node.js** e o **Cypress** instalados:
 
@@ -93,7 +93,7 @@ npx cypress open
 
 ---
 
-### 🧠 Notas Técnicas
+### Notas Técnicas
 
 - O script foi desenvolvido para **resiliência a variações linguísticas** (ex.: botões “Accept” ou “Aceitar”).  
 - Os **seletores** foram definidos com base em **visibilidade e texto**, garantindo compatibilidade com futuras alterações visuais do site.  
@@ -101,7 +101,7 @@ npx cypress open
 
 ---
 
-## 🧑‍💻 Autor
+## Autor
 
 **José Pereira**  
-📍 Candidatura a **QA Engineer** – automação de testes mobile e web.
+ **QA Engineer** – automação de testes mobile e web.
