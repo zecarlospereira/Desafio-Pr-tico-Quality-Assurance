@@ -1,0 +1,61 @@
+Instruções para Execução dos Testes em Ambiente Limpo
+
+===========================================================
+Tarefa 2 – Mobile Automation (Aplicação AYR)
+===========================================================
+
+1. Preparação do Ambiente
+--------------------------
+- Utiliza um dispositivo móvel recentemente configurado (sem histórico da aplicação AYR).
+- Garante que a aplicação AYR está instalada e funcional.
+- Concede previamente a permissão de localização configurada como **“sempre permitir”**.
+- Verifica que não existem contas ativas ou sessões anteriores da app.
+
+2. Limpeza do Ambiente
+-----------------------
+- Se a aplicação AYR já tiver sido usada no dispositivo:
+  - Reinstala a aplicação.
+  - Limpa todos os dados da app antes de iniciar os testes.
+
+3. Execução dos Testes
+-----------------------
+- Importa os ficheiros `.yaml` no ambiente de testes.
+- Executa os cenários de teste na seguinte ordem recomendada:
+  1. `Criação de conta na aplicação AYR..yaml`
+  2. `Login com uma conta existente..yaml`
+  3. `Registar uma atividade dentro da aplicação..yaml`
+- Cada cenário pode ser executado individualmente, mas a ordem acima assegura coerência entre os fluxos.
+
+4. Pós-execução
+----------------
+- Regista os resultados dos testes (logs, screenshots, vídeos, etc.).
+- Caso ocorram falhas, verifica se há inconsistências no ambiente ou permissões pendentes.
+
+===========================================================
+Tarefa 3 – Web Automation (Website CEiiA)
+===========================================================
+
+1. Preparação do Ambiente
+--------------------------
+- Certifica-te de que **Node.js** e **Cypress** estão instalados no sistema.
+- Garante uma ligação estável à Internet para aceder ao website do CEiiA.
+- Recomendado: limpa a cache e cookies do navegador antes da execução.
+
+2. Instalação de Dependências
+------------------------------
+Executa os seguintes comandos no terminal:
+    npm install
+    npx cypress open
+
+3. Execução dos Testes
+-----------------------
+- Abre o Cypress e seleciona o ficheiro `ceiia.spec.cy.js`.
+- Escolhe o navegador pretendido (por defeito, **Chrome**).
+- Os testes irão correr automaticamente, validando menus, páginas e o footer do site CEiiA.
+
+4. Limpeza Pós-Teste
+---------------------
+- Fecha o Cypress após a execução.
+- Limpa logs temporários e caches criadas pelo Cypress, se necessário.
+
+===========================================================
